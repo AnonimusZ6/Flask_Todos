@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>ToDos</title>
+</head>
+<body>
+
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">ToDos</span>
+      </a>
+
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="/" class="btn btn-outline-secondnary" aria-current="page">Домой</a></li>
+        <li class="nav-item"><a href="/listofdo" class="btn btn-outline-secondnary">Список дел</a></li>
+        <li class="nav-item"><a href="/create" class="btn btn-outline-secondnary">Создать</a></li>
+      </ul>
+    </header>
+  </div>
+
+
+{% block body %}
+<div class="container">
+<div class="jumbotron">
+  <h1 class="display-4">ToDos</h1>
+  <p class="lead">Принципиально новый сайт, который был написан на python, с использованием фреймворка flask</p>
+  <hr class="my-4">
+  <p>Данный проект используется как список дел, он будет дополняться</p>
+  <p class="lead">
+    <a class="btn btn-dark btn-lg" href="/create" role="button">Начать</a>
+  </p>
+</div>
+</div>
+{% endblock %}
+
+  </body>
+  </html>

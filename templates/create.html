@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block body %}
+
+    <div class="container">
+        <form method="POST" action="/create">
+    <div class="mb-3">
+        <label for="4example" class="form-label">Название</label>
+        <input type="text" class="form-control" name="intro">
+    </div>
+    <div class="mb-3">
+        <label for="3example" class="form-label">Содержание</label>
+        <textarea type="text" class="form-control" name="text"></textarea>
+    </div>
+</div>
+<div class="container">
+    <input type="submit" class="btn btn-dark btn-lg" value="Отправить">
+</div>
+</div>
+</form>
+
+
+
+{% endblock %}
+

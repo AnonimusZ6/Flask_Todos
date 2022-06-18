@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<div class="container">
+    <h1>Все записи</h1>
+</div>
+
+{% for i in todd %}
+<div class="container">
+    <div class="alert alert-primary">
+        <h2>{{ i.intr }}</h2>
+        <p>{{ i.text }}</p>
+        <p><b>Дата: {{ i.date.date() }}</b></p>
+    </div>
+
+</div>
+
+{% endfor %}
+{% endblock %}
+
